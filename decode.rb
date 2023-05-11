@@ -44,6 +44,12 @@ def decode morse
     "-.--",
     "--.."
    ] 
- 
+ decoded = ''
+ morse_words = morse.split('  ')
+ morse_words.each {|w| 
+  w.split(' ').each {|c| decoded += (morse_ascii.index(c)+48).chr}
+  decoded += ' '
+}
+decoded
 end
 
