@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Class responsible for decoding Morse code.
 class MorseDecoder
   MORSE_CODE = {
@@ -36,7 +34,7 @@ class MorseDecoder
   end
 
   def self.decode_word(code)
-    code.split(' ').map { |char| decode_char(char) }.join
+    code.split.map { |char| decode_char(char) }.join
   end
 
   def self.decode(message)
