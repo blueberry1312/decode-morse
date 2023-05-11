@@ -53,3 +53,5 @@ def decode morse
 decoded
 end
 
+puts decode "-- -.--   -. .- -- ."
+puts decode '.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...'
